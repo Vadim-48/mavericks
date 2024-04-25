@@ -1,11 +1,12 @@
 .footer {
     background: var(--3);
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     color: var(--1);
     &__head {
         display: flex;
         justify-content: space-between;
+        margin: 0 10px;
     }
 
     &__form{

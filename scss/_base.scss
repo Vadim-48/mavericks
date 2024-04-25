@@ -51,18 +51,19 @@ body{
     transition: all 0.3s ease;
 }
 
+// focus, hover, active
 
 .link:focus-visible, .btn:focus-visible, .logo:focus-visible,
 .nav-right__bell:focus-visible, .nav-right__user:focus-visible{
     box-shadow: 0 0 0 3px #8fc49f;
 }
 
-.btn:hover{
-    background: #4f96b5;  
+input:focus-visible, textarea:focus-visible{
+    box-shadow: 0 0 0 3px #7f7aa7;
 }
 
-.btn:active .btn-arrow{
-    fill: #1ca139;
+.btn:hover{
+    background: #4f96b5;  
 }
 
 .social-link:hover{
@@ -81,10 +82,9 @@ body{
     color: #1ca139;
 }
 
-.btn:active .btn-arrow{
+.btn:active .btn-arrow, .social-link:active{
     fill: #1ca139;
 }
-
 
 .title{
     font-weight: 700;

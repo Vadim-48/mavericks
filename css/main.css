@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -137,12 +138,12 @@ body {
   box-shadow: 0 0 0 3px #8fc49f;
 }
 
-.btn:hover {
-  background: #4f96b5;
+input:focus-visible, textarea:focus-visible {
+  box-shadow: 0 0 0 3px #7f7aa7;
 }
 
-.btn:active .btn-arrow {
-  fill: #1ca139;
+.btn:hover {
+  background: #4f96b5;
 }
 
 .social-link:hover {
@@ -161,7 +162,7 @@ body {
   color: #1ca139;
 }
 
-.btn:active .btn-arrow {
+.btn:active .btn-arrow, .social-link:active {
   fill: #1ca139;
 }
 
@@ -242,8 +243,8 @@ body {
   gap: clamp(10px, -0.946rem + 2.46vw, 32px);
 }
 .nav__item-link {
-  font-weight: 800;
-  font-size: clamp(12px, 0.464rem + 0.45vw, 16px);
+  font-weight: 400;
+  font-size: clamp(12px, -1.095rem + 2.68vw, 30px);
   color: var(--1);
 }
 .nav__logo {
@@ -474,12 +475,13 @@ body {
 .footer {
   background: var(--3);
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   color: var(--1);
 }
 .footer__head {
   display: flex;
   justify-content: space-between;
+  margin: 0 10px;
 }
 .footer__form {
   display: flex;
