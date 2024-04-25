@@ -1,0 +1,77 @@
+.why-svg{
+    fill: white;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 16px;
+}
+
+.why {
+    background:  url('./../img/why/why-bg-top.png') 0 0/contain no-repeat;
+    background-color: var(--3);
+    color: var(--1);
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &__title {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // display: grid;
+        // grid-template-columns: 2fr 1fr;
+        
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 54px 24px;
+        // width: 500px;
+        // width: clamp(350px, -17.625rem + 79vw, 982px);
+        // width: clamp(310px, -54.166rem + 130.74vw, 982px);
+    }
+
+    &__column {
+        width: clamp(140px, -9.964rem + 33.27vw, 311px);
+    }
+
+    &__sub-title {
+        font-weight: 800;
+        font-size: clamp(14px, 0.801rem + 0.37vw, 18px);
+        line-height: 1.85em; 
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: clamp(14px, 0.801rem + 0.37vw, 18px);
+        line-height: 1.4em; 
+    }
+    &__swiper{
+        width: clamp(300px, -15.625rem + 50vw, 500px);
+        // height: clamp(300px, -15.625rem + 50vw, 550px);
+        // width: 500px;
+    }
+}
+
+.swiper {
+    // width: clamp(300px, 4.464rem + 71.43vw, 500px);
+    // height: clamp(350px, 4.464rem + 71.43vw, 550px);
+}
+
+.swiper-slide{
+    // width: 458px;
+    height: clamp(400px, -15.625rem + 50vw, 540px);
+    // height: 550px;
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;	
+    }
+}
+
+//флекс в зворотньому порядку, брейк на 1100

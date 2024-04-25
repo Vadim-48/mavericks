@@ -1,0 +1,99 @@
+:root {
+	--4: #afafaf;
+	--5: #f7f7f7;
+	--1: #fff;
+	--2: #0e7db9;
+	--3: #0b2a46;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    background: var(--5);
+    // max-width: 1920px;
+}
+
+.container {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: clamp(14px, 0.739rem + 0.68vw, 20px);
+    letter-spacing: 0.03em;
+    color: var(--1);
+    padding: clamp(12px, 0.614rem + 0.68vw, 18px) 0;
+    border: 2px solid var(--1);
+    width: 173px;
+    transition: all 0.3s ease;
+}
+
+.btn-bg-blue{
+    border: 2px solid var(--2);
+    background: var(--2);
+}
+
+.btn-color-blue{
+    border: 2px solid var(--2);
+    color: var(--2);
+}
+
+.btn-arrow{
+    fill: var(--1);
+    height: 25px;
+    width: 25px;
+    margin-left: 15px;
+    margin-bottom: -3px; 
+    transition: all 0.3s ease;
+}
+
+
+.link:focus-visible, .btn:focus-visible, .logo:focus-visible,
+.nav-right__bell:focus-visible, .nav-right__user:focus-visible{
+    box-shadow: 0 0 0 3px #8fc49f;
+}
+
+.btn:hover{
+    background: #4f96b5;  
+}
+
+.btn:active .btn-arrow{
+    fill: #1ca139;
+}
+
+.social-link:hover{
+    fill: #2f2fcb;
+}
+
+.logo:hover, .nav-right__bell:hover, .nav-right__user:hover{
+    opacity: 0.7;
+}
+
+.link:hover {
+    text-decoration-line: underline;
+}
+
+.link:active, .btn:active{
+    color: #1ca139;
+}
+
+.btn:active .btn-arrow{
+    fill: #1ca139;
+}
+
+
+.title{
+    font-weight: 700;
+    font-size: clamp(24px, 1.167rem + 1.67vw, 42px);
+    line-height: 1.1em;  
+}
+
+.text{
+    font-weight: 400;
+    font-size: clamp(16px, 0.813rem + 0.42vw, 18px);
+    line-height: 1.4em;  
+}

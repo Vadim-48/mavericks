@@ -1,0 +1,47 @@
+.header{
+    background: #afafaf;
+    background: url('./../img/header/header-bg-down.png') 0 100%/contain no-repeat, url('./../img/header/header-bg.jpg') 50% 0/cover no-repeat;
+    aspect-ratio: 16 / 9;
+    color: var(--1); 
+
+    &__wrap{
+        max-width: 1920px; 
+        margin: 0 auto;
+        padding: 25px clamp(15px, 0.178rem + 3.8vw, 56px);
+        padding-bottom: 100px;
+    }
+    &__header-content {
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: center;
+        text-wrap: balance;
+    }
+}
+.header-content {
+    &__title {
+        font-family: "Alfa Slab One", serif;
+        font-weight: 400;
+        font-size: clamp(24px, 0.563rem + 4.69vw, 84px);
+        margin-bottom: 48px; 
+        text-transform: uppercase;  
+    }
+
+    &__text {
+        font-weight: 500;
+        margin-bottom: 48px; 
+    }
+
+    &__btn{
+        display: flex;
+        justify-content: center;
+            & a:first-child {
+                margin-right: 16px;
+                width: 214px;
+            }
+            & a:last-child {
+                margin-right: 16px;
+                width: 173px;
+            }
+    }
+}
+
