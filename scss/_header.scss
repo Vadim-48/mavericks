@@ -9,6 +9,9 @@
         margin: 0 auto;
         padding: 25px clamp(15px, 0.178rem + 3.8vw, 56px);
         padding-bottom: 100px;
+        // animation
+        animation-name: opacity;
+        animation-duration: 4s;
     }
     &__header-content {
         margin: 0 auto;

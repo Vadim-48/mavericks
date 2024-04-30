@@ -7,11 +7,9 @@
     
 }
 @media (max-width: 991px){
-    // .why__wrap{
-    //     flex-direction: column;
-    //     align-items: center;
-    // }
-
+    .header{
+        background: url('./../img/header/header-bg-down.png') 0 100%/contain no-repeat, url('./../img/header/header-bg05.jpg') 50% 0/cover no-repeat;
+    }
 }
 @media (max-width: 768px){
     .why{

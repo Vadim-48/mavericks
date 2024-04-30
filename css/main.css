@@ -110,18 +110,24 @@ body {
   color: var(--1);
   padding: clamp(12px, 0.614rem + 0.68vw, 18px) 0;
   border: 2px solid var(--1);
+  border-radius: 10px;
   width: 173px;
   transition: all 0.3s ease;
+  position: relative;
+  top: 0;
+  box-shadow: 0px 5px 0px rgb(139, 135, 135);
 }
 
 .btn-bg-blue {
   border: 2px solid var(--2);
   background: var(--2);
+  box-shadow: 0px 5px 0px rgb(63, 65, 138);
 }
 
 .btn-color-blue {
   border: 2px solid var(--2);
   color: var(--2);
+  box-shadow: 0px 5px 0px rgb(63, 65, 138);
 }
 
 .btn-arrow {
@@ -144,6 +150,13 @@ input:focus-visible, textarea:focus-visible {
 
 .btn:hover {
   background: #4f96b5;
+  top: 2px;
+  box-shadow: 0px 3px 0px rgb(139, 135, 135);
+}
+
+.btn-color-blue:hover, .btn-bg-blue:hover {
+  top: 2px;
+  box-shadow: 0px 3px 0px rgb(63, 65, 138);
 }
 
 .social-link:hover {
@@ -178,6 +191,14 @@ input:focus-visible, textarea:focus-visible {
   line-height: 1.4em;
 }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .header {
   background: #afafaf;
   background: url("./../img/header/header-bg-down.png") 0 100%/contain no-repeat, url("./../img/header/header-bg.jpg") 50% 0/cover no-repeat;
@@ -189,6 +210,8 @@ input:focus-visible, textarea:focus-visible {
   margin: 0 auto;
   padding: 25px clamp(15px, 0.178rem + 3.8vw, 56px);
   padding-bottom: 100px;
+  animation-name: opacity;
+  animation-duration: 4s;
 }
 .header__header-content {
   margin: 0 auto;
@@ -225,7 +248,7 @@ input:focus-visible, textarea:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: clamp(25px, -1.03rem + 12.96vw, 165px);
+  margin-bottom: clamp(25px, -1.03rem + 12.96vw, 140px);
 }
 
 .logo {
@@ -527,6 +550,11 @@ input:focus-visible, textarea:focus-visible {
   fill: #fff;
 }
 
+@media (max-width: 991px) {
+  .header {
+    background: url("./../img/header/header-bg-down.png") 0 100%/contain no-repeat, url("./../img/header/header-bg05.jpg") 50% 0/cover no-repeat;
+  }
+}
 @media (max-width: 768px) {
   .why__wrap {
     flex-direction: column-reverse;

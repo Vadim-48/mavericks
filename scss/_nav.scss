@@ -1,12 +1,9 @@
 .header__nav {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: clamp(25px, -1.03rem + 12.96vw, 140px);
 
-    // padding: 25px clamp(15px, 0.178rem + 3.8vw, 56px);
-    margin-bottom: clamp(25px, -1.03rem + 12.96vw, 165px);
-    // margin-bottom: 165px;
 }
 
 .logo {
