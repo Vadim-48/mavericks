@@ -36,3 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
   })
   linkClick();
 })
+
+
+document.querySelector(".nav-right__bell").addEventListener("click", function() {
+  const countBell = document.querySelector('.nav-right__bell-count');
+  let countBellContent = Number(countBell.innerHTML);
+  countBell.innerHTML = ++countBellContent;
+})
