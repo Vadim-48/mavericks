@@ -479,9 +479,10 @@ input:focus-visible, textarea:focus-visible {
   gap: 16px;
 }
 .message__btn {
-  width: 167px;
-  padding: 6px 28px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .form__text {
